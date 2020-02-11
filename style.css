@@ -1,0 +1,36 @@
+html { height: 100%;}
+
+body {width: 100%;
+      background-color: white;
+      font-family:sans-serif;
+      margin: 0px;}
+
+.header-1 { width: 100%;
+        background-color: #5385c1;
+
+}
+
+.theory { display: flex;
+            margin: 0px 20px;
+            justify-content: space-between;
+            padding: 10px;
+            color: white;
+            }
+
+.nav { display: none;}
+
+.section-header-container { display: flex;
+                            flex-direction: column;
+                            margin: 0px 40px;
+                            text-align: center;
+                            width: 400px;
+}
+
+.header-2 h2 {margin-bottom: 16px;
+                }
+.header-2 p { margin-top: 0px;}
+p {text-align: center;
+    }
+
+.content { display: flex;
+            flex-direction: column;}
