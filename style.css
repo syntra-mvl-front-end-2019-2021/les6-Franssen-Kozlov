@@ -5,7 +5,8 @@ body {width: 100%;
       background-color: white;
       color:rgb(153, 149, 149);
       font-family:sans-serif;
-      margin: 0px;}
+      margin: 0px;
+    font-size: 16px;}
 
 .header-1 { width: 100%;
         background-color: #5385c1;
@@ -28,12 +29,12 @@ body {width: 100%;
                             width: 400px;
 }
 
-.header-2 h2 {margin-bottom: 16px;
+.header-2 h2 {margin-bottom: 1rem;
                 }
 .header-2 p { margin-top: 0px;}
 
 p { text-align: center;
-    line-height: 30px;
+    line-height: 2rem;
     }
 
 .content { display: flex;
@@ -44,11 +45,12 @@ h2, h3, h4, h5, h6 { color: rgb(44, 125, 175);
         text-align: center;
  }
 
-.line {margin: 0px 40px;
+.line {margin:  3rem 2.5rem;
         border-color: rgb(153, 149, 149);}
+        
 
 .row2 { 
-    margin: 0px 40px;
+    margin: 0 2.5rem;
     text-align: center;
     width: 400px;
 }
@@ -56,12 +58,12 @@ h2, h3, h4, h5, h6 { color: rgb(44, 125, 175);
 dt { font-weight: bold;
 }
 
-blockquote { line-height: 30px;
+blockquote { line-height: 2rem;
     font-style: italic;
     border-left: solid rgb(153, 149, 149);
-    border-width: 5px;
-    margin: 0px 0px 30px 0px;
-    padding-left: 50px;
+    border-width: 0.2rem;
+    margin: 0 0 2rem 0;
+    padding-left: 3rem;
    
 }
 .buttons {margin: auto;
@@ -77,39 +79,41 @@ blockquote { line-height: 30px;
 
 
 li a  { display: block;
-          margin-bottom: 10px; 
+          margin-bottom: 0.4rem; 
                
          }
 
-ul {margin-bottom: 20px;
+ul {margin-bottom: 1.4rem;
+    padding-inline-start: 0;
+
 
     }
 
 .button.special { background-color: #5385c1;
                 color: white;
-                padding: 10px 0px;
+                padding: 0.4rem 0;
 }
 
 .button { background-color: gray;
             color: white;
-            padding: 10px 0px;}
+            padding: 0.4rem 0;}
 
 .button.alt {background-color: white;
             color: black;
             border: solid rgb(153, 149, 149);
-            padding: 10px 0px;}
+            padding: 0.4rem 0;}
 
 .button.special.big {background-color: #5385c1;
     color: white;
-    padding: 30px 0px;
-    font-size: 20px;
+    padding: 2rem 0;
+    font-size: 1.4rem;
 }
 
 .button.alt.small {background-color: white;
     color: black;
     border: solid rgb(153, 149, 149);
     padding: 0px 0px;
-    font-size: 15px;}
+    font-size: 1rem;}
 
 .actions.fit {display: flex;
             flex-direction: row;
@@ -117,7 +121,7 @@ ul {margin-bottom: 20px;
             }
 
 .actions.fit li {
-            width: calc((100% - 20px) / 3);}
+            width: calc((100% - 1.4rem) / 3);}
 
 
 .button.special.fit { background-color: #5385c1;
@@ -133,66 +137,64 @@ ul {margin-bottom: 20px;
 .button.alt.fit {background-color: white;
             color: black;
             border: solid rgb(153, 149, 149);
-              padding: 10px 0px 5px 0px;  
+              padding: 0.4rem 0 0.4rem 0;  
             }
 
 .button.special.fit.small { background-color: #5385c1;
                 color: white;
-                  padding: 5px;
-                  font-size: 15px;       
+                  padding: 0.4rem;
+                  font-size: 1rem;       
 }
 
 .button.fit.small { background-color: gray;
     color: white;
-    padding: 5px;
-    font-size: 15px;        
+    padding: 0.4rem;
+    font-size: 1rem;        
     }
 
 .button.alt.fit.small {background-color: white;
             color: black;
             border: solid rgb(153, 149, 149);
-            padding: 5px;
-            font-size: 15px; 
+            padding: 0.4rem;
+            font-size: 1rem;
             }
 
 
 li span {display: block;
-        margin-bottom: 20px;}
+        margin-bottom: 1.4rem;}
 
 .button.special.disabled { background-color: rgb(230, 223, 223);
                 color: white;
-                padding: 10px 0px;
-                
+                padding: 0.6rem 0;                
 }
 
 .button.disabled { background-color: rgb(230, 223, 223);
             color: white;
-            padding: 10px 0px;}
+            padding: 0.6rem 0;}
 
 .button.alt.disabled {background-color: rgb(230, 223, 223);
             color: white;
             border: none;
-            padding: 10px 0px;}
+            padding: 0.6rem 0;}
 
 p span img {width: 35%;
 }
 .left img {float: left;
-    margin: 10px 20px 20px 10px;  }
+    margin: 0.6rem 1.4rem;  }
 .right img {float: right;
-    margin: 10px 20px 20px 10px; }
-
+    margin: 0.6rem 1.4rem; }
 .box { border: solid  rgb(153, 149, 149);
-        border-width: 1px;
-        padding: 24px;
-        margin-bottom: 32px;
+        border-width: 0.12rem;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
  
 }
 
-.footer {padding-top: 12px;
-        margin: 0px 36px 25px 36px;
+.footer {padding-top: 0.8rem;
+        margin: 0 2.4rem 1.52rem 1.52rem;
         border-top: solid rgb(153, 149, 149);
         text-align: center;
-        font-size: 10px;
+        font-size: 0.6rem;
         }
 
 
