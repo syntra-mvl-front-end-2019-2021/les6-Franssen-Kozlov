@@ -32,7 +32,7 @@ body {width: 100%;
                 }
 .header-2 p { margin-top: 0px;}
 
-p {
+p { text-align: center;
     line-height: 30px;
     }
 
@@ -41,6 +41,7 @@ p {
 
 h2, h3, h4, h5, h6 { color: rgb(44, 125, 175);
         font-weight: normal;
+        text-align: center;
  }
 
 .line {margin: 0px 40px;
@@ -111,8 +112,9 @@ ul {margin-bottom: 20px;
     font-size: 15px;}
 
 .actions.fit {display: flex;
+            flex-direction: row;
              justify-content: space-between;
-            /* width: 400px;}  */}
+            }
 
 .actions.fit li {
             width: calc((100% - 20px) / 3);}
@@ -152,6 +154,47 @@ ul {margin-bottom: 20px;
             padding: 5px;
             font-size: 15px; 
             }
+
+
+li span {display: block;
+        margin-bottom: 20px;}
+
+.button.special.disabled { background-color: rgb(230, 223, 223);
+                color: white;
+                padding: 10px 0px;
+                
+}
+
+.button.disabled { background-color: rgb(230, 223, 223);
+            color: white;
+            padding: 10px 0px;}
+
+.button.alt.disabled {background-color: rgb(230, 223, 223);
+            color: white;
+            border: none;
+            padding: 10px 0px;}
+
+p span img {width: 35%;
+}
+.left img {float: left;
+    margin: 10px 20px 20px 10px;  }
+.right img {float: right;
+    margin: 10px 20px 20px 10px; }
+
+.box { border: solid  rgb(153, 149, 149);
+        border-width: 1px;
+        padding: 24px;
+        margin-bottom: 32px;
+ 
+}
+
+.footer {padding-top: 12px;
+        margin: 0px 36px 25px 36px;
+        border-top: solid rgb(153, 149, 149);
+        text-align: center;
+        font-size: 10px;
+        }
+
 
 
 
