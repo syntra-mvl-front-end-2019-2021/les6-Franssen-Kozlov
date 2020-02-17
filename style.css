@@ -1,5 +1,7 @@
 html { height: 100%;}
 
+* { box-sizing: border-box;}
+
 body {width: 100%;
       background-color: white;
       color:rgb(153, 149, 149);
@@ -22,9 +24,9 @@ body {width: 100%;
 
 .section-header-container { display: flex;
                             flex-direction: column;
-                            margin: 0px 40px;
+                            margin: auto;
                             text-align: center;
-                            width: 400px;
+                            width: 85%;
 }
 
 .header-2 h2 {margin-bottom: 16px;
@@ -33,6 +35,7 @@ body {width: 100%;
 
 p {
     line-height: 30px;
+    text-align: center;
     }
 
 .content { display: flex;
@@ -40,15 +43,16 @@ p {
 
 h2, h3, h4, h5, h6 { color: rgb(44, 125, 175);
         font-weight: normal;
+        text-align: center;
  }
 
 .line {margin: 0px 40px;
         border-color: rgb(153, 149, 149);}
 
 .row2 { 
-    margin: 0px 40px;
+    margin: auto;
     text-align: center;
-    width: 400px;
+    width: 85%;
 }
 
 dt { font-weight: bold;
@@ -62,99 +66,146 @@ blockquote { line-height: 30px;
     padding-left: 50px;
    
 }
-.buttons {margin: auto;
-            
+
+.actions { display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+        
 }
-.buttons li { list-style-type: none;
-            
+
+.fitgroup {display: flex;
+            }
+
+
+.fitgroup > div { flex: 1;
+        margin: 0px 5px;
 }
+
+.actions .button.disabled { background-color: lightgray;
+                            color: white; }
 
 .button { text-decoration: none;
-
-}
-
-
-li a  { display: block;
-          margin-bottom: 10px; 
-               
-         }
-
-ul {margin-bottom: 20px;
-
-    }
-
-.button.special { background-color: #5385c1;
-                color: white;
-                padding: 10px 0px;
-}
-
-.button { background-color: gray;
-            color: white;
-            padding: 10px 0px;}
-
-.button.alt {background-color: white;
-            color: black;
-            border: solid rgb(153, 149, 149);
-            padding: 10px 0px;}
-
-.button.special.big {background-color: #5385c1;
+    background-color: #5a5a5a;
     color: white;
-    padding: 30px 0px;
-    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    
 }
 
-.button.alt.small {background-color: white;
+
+.button.special {  background-color: rgb(44, 125, 175);
+                    color: white;  
+}
+
+.button.alt {
+    background-color: #fff;
+    border: 2px solid #dbdbdb;
     color: black;
-    border: solid rgb(153, 149, 149);
-    padding: 0px 0px;
-    font-size: 15px;}
 
-.actions.fit {display: flex;
-             justify-content: space-between;
-            /* width: 400px;}  */}
-
-.actions.fit li {
-            width: calc((100% - 20px) / 3);}
-
-
-.button.special.fit { background-color: #5385c1;
-                color: white;
-                         
 }
 
-.button.fit { background-color: gray;
-    color: white;
-        
+.button.special.big { padding: 20px 0px;
+                    font-size: 20px;}
+
+.button.alt.small {padding: 5px 0px;
+                    font-size: 10px;}
+
+
+p span img {width: 35%;
+        }
+.left img {float: left;
+                margin: 10px 20px 20px 10px;  }
+.right img {float: right;
+            margin: 10px 20px 20px 10px; }
+.box { border: solid  rgb(153, 149, 149);
+                border-width: 1px;
+                padding: 24px;
+                margin-bottom: 32px;
+         
+        }
+.footer {padding-top: 12px;
+                margin: 0px 36px 25px 36px;
+                border-top: solid rgb(153, 149, 149);
+                text-align: center;
+                font-size: 10px;
+                }
+
+
+
+header nav { width: 20px;}
+
+
+.hamburger {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+
+}
+
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: 5px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 5px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 481px){
+
+    p,h2,h3,h4,h5,h6,blockquote,dt {text-align: left;
+                                } 
+
+    .actions { display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+    }
+    .actions > div { flex: 1;
+                    margin: 0px 10px;
+                    
     }
 
-.button.alt.fit {background-color: white;
-            color: black;
-            border: solid rgb(153, 149, 149);
-              padding: 10px 0px 5px 0px;  
-            }
 
-.button.special.fit.small { background-color: #5385c1;
-                color: white;
-                  padding: 5px;
-                  font-size: 15px;       
-}
+    #centeralways { display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-.button.fit.small { background-color: gray;
-    color: white;
-    padding: 5px;
-    font-size: 15px;        
     }
 
-.button.alt.fit.small {background-color: white;
-            color: black;
-            border: solid rgb(153, 149, 149);
-            padding: 5px;
-            font-size: 15px; 
-            }
-
-
-
-@media screen and (min-width: 480px){
-
-    .section-header-container {text-align: start;} 
 }
+
+@media screen and (min-width: 736px){
+        .responsive1 {display: flex;
+                      width: 100%;  
+        }
+        .responsive1a { padding-left: 24px;
+                       }
+}
+
+@media screen and (min-width: 981px) {
+
+    .row2 { display: flex;
+            flex-direction: row;
+
+    }
+    .row2 > div { flex: 1;}
+
+    .list { margin-right: 40px;}
+}
+
