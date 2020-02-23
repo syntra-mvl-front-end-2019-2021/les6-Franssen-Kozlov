@@ -1,0 +1,210 @@
+html { height: 100%;}
+
+* { box-sizing: border-box;}
+
+body {width: 100%;
+      background-color: white;
+      color:rgb(153, 149, 149);
+      font-family:sans-serif;
+      margin: 0px;}
+
+.header-1 { width: 100%;
+        background-color: #5385c1;
+
+}
+
+.theory { display: flex;
+            margin: 0px 20px;
+            justify-content: space-between;
+            padding: 10px;
+            color: white;
+            }
+
+.nav { display: none;}
+
+.section-header-container { display: flex;
+                            flex-direction: column;
+                            margin: auto;
+                            text-align: center;
+                            width: 85%;
+}
+
+.header-2 h2 {margin-bottom: 16px;
+                }
+.header-2 p { margin-top: 0px;}
+
+p {
+    line-height: 30px;
+    text-align: center;
+    }
+
+.content { display: flex;
+            flex-direction: column;}
+
+h2, h3, h4, h5, h6 { color: rgb(44, 125, 175);
+        font-weight: normal;
+        text-align: center;
+ }
+
+.line {margin: 0px 40px;
+        border-color: rgb(153, 149, 149);}
+
+.row2 { 
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+dt { font-weight: bold;
+}
+
+blockquote { line-height: 30px;
+    font-style: italic;
+    border-left: solid rgb(153, 149, 149);
+    border-width: 5px;
+    margin: 0px 0px 30px 0px;
+    padding-left: 50px;
+   
+}
+
+.actions { display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+        
+}
+
+.fitgroup {display: flex;
+            }
+
+
+.fitgroup > div { flex: 1;
+        margin: 0px 5px;
+}
+
+.actions .button.disabled { background-color: lightgray;
+                            color: white; }
+
+.button { text-decoration: none;
+    background-color: #5a5a5a;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    
+}
+
+
+.button.special {  background-color: rgb(44, 125, 175);
+                    color: white;  
+}
+
+.button.alt {
+    background-color: #fff;
+    border: 2px solid #dbdbdb;
+    color: black;
+
+}
+
+.button.special.big { padding: 20px 0px;
+                    font-size: 20px;}
+
+.button.alt.small {padding: 5px 0px;
+                    font-size: 10px;}
+
+
+p span img {width: 35%;
+        }
+.left img {float: left;
+                margin: 10px 20px 20px 10px;  }
+.right img {float: right;
+            margin: 10px 20px 20px 10px; }
+.box { border: solid  rgb(153, 149, 149);
+                border-width: 1px;
+                padding: 24px;
+                margin-bottom: 32px;
+         
+        }
+.footer {padding-top: 12px;
+                margin: 0px 36px 25px 36px;
+                border-top: solid rgb(153, 149, 149);
+                text-align: center;
+                font-size: 10px;
+                }
+
+
+
+header nav { width: 20px;}
+
+
+.hamburger {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+
+}
+
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: 5px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 5px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 481px){
+
+    p,h2,h3,h4,h5,h6,blockquote,dt {text-align: left;
+                                } 
+
+    .actions { display: flex;
+                flex-direction: row;
+                padding-left: 0px;
+    }
+    .actions > div { flex: 1;
+                    margin: 0px 10px;
+                    
+    }
+
+
+    #centeralways { display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+    }
+
+}
+
+@media screen and (min-width: 736px){
+        .responsive1 {display: flex;
+                      width: 100%;  
+        }
+        .responsive1a { padding-left: 24px;
+                       }
+}
+
+@media screen and (min-width: 981px) {
+
+    .row2 { display: flex;
+            flex-direction: row;
+
+    }
+    .row2 > div { flex: 1;}
+
+    .list { margin-right: 40px;}
+}

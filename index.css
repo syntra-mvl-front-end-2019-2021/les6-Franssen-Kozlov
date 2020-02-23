@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+html { height: 100%;
+}
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body { width: 100%;
+    font-size: 16px;
+    color: #5385c1;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+nav { display: none;
+}
+
+header,
+section { width: 100%;
+         text-align: center;} 
+
+#header { position: relative;
+          }
+
+#firstheader { position: absolute;
+                padding: 2rem;
+}
+
+
+#firstheader > .logo { text-decoration: none;
+                color: white;
+                padding: 1rem;
+                font-weight: bold;}
+
+
+#secondheader { padding: 6rem 1.5rem 4rem 1.5rem;
+        background-image: url(banner.jpg);
+        background-size: cover;
+        color: white;
+        border-top: 0.5rem solid #5385c1;
+              
+}
+
+#secondheader p { font-size: 0.9rem;
+            }
+#secondheader h1 {font-size: 2.5rem;
+        font-weight: 100;}
+
+
+img { width: 35%;}
+
+p {margin-bottom: 2rem;
+    color: #9A9A9A;}
+
+
+.button { text-decoration: none;
+    background-color: #5385c1;
+    color: white;
+    display: block;
+    padding: 0.7rem 0rem;
+    font-weight: bold;
+    
+    }
+ .line { padding-bottom: 2.5rem;
+        border-bottom: 0.05rem solid rgb(153, 149, 149);
+        margin: 0 0 3rem;} 
+
+.section { padding: 2rem 0rem;
+            width: 85%;
+            margin: auto;
+            }
+
+.section1 h3 { font-weight: normal;
+    font-size: 1.3rem;
+    margin: 0 0 1.5rem;}
+
+.section2 { background-color: #5385c1;
+            color: white;
+}
+
+.section2 header p {color: white;
+            font-weight: lighter;
+            font-size: 0.9rem;
+            margin: 0 0 1.5rem;}
+
+.section2 h2 {font-weight: 100;
+    font-size: 2rem;
+    margin: 0 0 1rem;}
+
+.section2 .flex p { color: white;
+                    font-weight: lighter;
+}
+
+.section2 .flex h3 { font-weight: normal;
+}
+
+.box.person { margin: 0 0 2rem;
+            padding: 3rem 1.5rem;
+            border: 0.01rem solid rgb(207, 202, 202);
+            }
+
+.box.person img { border-radius: 50%;
+                    width: 45%;
+                    margin: 0 0 1rem;} 
+}
+
