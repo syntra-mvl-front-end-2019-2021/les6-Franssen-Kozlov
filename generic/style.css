@@ -1,0 +1,216 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+/* 480
+736
+980
+1280
+1680 */
+html { height: 100%;}
+*{
+    box-sizing: border-box;
+}
+
+body {width: 100%;
+      background-color: white;
+      color:#9a9a9a;
+      font-family: "Raleway", Arial, Helvetica, sans-serif;      margin: 0px;
+    font-size: 16px;}
+   
+    h1,
+    p
+    {
+        text-align: center;
+        margin: 0 0 2rem 0;
+
+    }
+    h2, h3, h4, h5, h6 { 
+        color: #5385C1;
+        font-weight: normal;
+        margin: 0 0 1rem 0;
+    }
+    .inner
+{
+    display: flex;
+}
+.header-1 { width: 100%;
+    background-color: #5385c1;
+
+}
+
+.theory { display: flex;
+        margin: 0px 20px;
+        justify-content: space-between;
+        padding: 10px;
+        color: white;
+        }
+
+.nav { display: none;}
+#three
+{
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0 2rem
+    
+}
+#three h2
+{
+    font-size: 3rem;
+ color:#5385C1 ;
+    font-weight: 100;
+    margin: 0 0 1rem 0;
+}
+#three .inner
+{
+    margin: 0 2.2rem;
+    display: block;
+}
+#three .article-1{
+    border: none;
+    
+}
+.image.fit img
+{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.article-1{ 
+    margin-bottom: 3rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 3rem;
+}
+.big-header p,
+.big-header h2
+{
+    text-align: center;
+}
+.button.special 
+ { 
+    background-color: #5385c1;
+    color: white;
+    padding: 0.4rem 0;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+footer{
+    
+    display: block;
+}
+
+#footer {
+    padding-top: 1.8rem;
+    margin: 0 2.4rem 1.52rem 1.52rem;
+    border-top: 1px solid rgba(153, 149, 149);
+    text-align: center;
+    font-size: 0.9rem;
+    }
+
+.copyright a {
+    color: #bbb;
+    text-decoration: none;
+}
+/* 736 */
+@media screen and (min-width:736px)
+{
+.button.special 
+{
+    background-color: #5385c1;
+    color: white;
+    padding: 0.4rem 1.5rem;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: inline-block;
+
+}
+
+.inner
+    { 
+     text-align: left;
+     }
+p{
+    text-align: left;
+}
+     
+}
+/* 980 */
+@media  screen and (min-width: 980px)
+{
+    h2
+    {
+        font-size: 3rem;
+    }
+    nav{
+        display: flex;
+    }
+    
+}
+@media screen and (min-width:980px)
+{
+    #three .inner
+    {
+        margin: 0 3rem;
+    }
+ }
+ /* 1280 */
+@media screen and (min-width:1280px)
+{
+    body{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width:1280px)
+{
+    
+    #three .article-1{
+       
+        width: 50%;
+        margin-right: 2rem;
+        padding: 0rem;
+    
+    }
+    
+}
+
+
+
+
+@media screen and (min-width:1280px)
+{
+  
+    #three .inner
+    {
+        margin: 0 4rem;
+    }
+    
+}
+
+    
+
+    @media screen and (min-width:1280px)
+    {
+     #three
+        {
+        padding: 5.5rem 0 5.5rem
+    }
+    
+   
+    
+    }
+ 
+@media screen and (min-width:1280px)
+{
+    .big-header
+    {
+        margin-bottom: 5rem;
+    }
+    .article{
+        display: flex;
+    }
+    h3{
+        font-size: 1.35em;
+        font-weight: 300;
+    }
+    
+}
