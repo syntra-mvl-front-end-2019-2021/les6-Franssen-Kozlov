@@ -219,8 +219,7 @@ a:hover {color: red;}
         }
         .responsive1a { padding-left: 1.5rem;
                        }
-        .row2,
-        .copyright { width: 90%;}
+
 }
 
 @media screen and (min-width: 981px) {
@@ -240,4 +239,15 @@ a:hover {color: red;}
             text-decoration: none;
             padding: 0.5rem;
             font-size: 0.7rem;}
+
+    .buttons {padding-top: 8rem;}
+}
+
+@media screen and (min-width: 1285px) {
+
+    .section-header-container,
+    .row2,
+    .copyright,
+    .theory { width: 75%;
+            margin: auto;}
 }
