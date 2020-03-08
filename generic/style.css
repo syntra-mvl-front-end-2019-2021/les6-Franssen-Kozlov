@@ -97,13 +97,13 @@ footer{
     display: block;
 }
 
-#footer {
-    padding-top: 1.8rem;
-    margin: 0 2.4rem 1.52rem 1.52rem;
-    border-top: 1px solid rgba(153, 149, 149);
-    text-align: center;
-    font-size: 0.9rem;
-    }
+#footer {padding-top: 0.8rem;
+        margin: 0 2.4rem 1.52rem 1.52rem;
+        border-top: 1px solid rgb(153, 149, 149);
+        text-align: center;
+        font-size: 0.6rem;
+        }
+
 
 .copyright a {
     color: #bbb;
@@ -155,7 +155,7 @@ p{
 @media screen and (min-width:1280px)
 {
     body{
-        font-size: 14px;
+        font-size: 11pt;
     }
 }
 
@@ -211,6 +211,15 @@ p{
     h3{
         font-size: 1.35em;
         font-weight: 300;
+    }
+    
+}
+@media screen and (min-width:1680px)
+{
+   
+    #three .inner
+    {
+        margin: 0 18rem;
     }
     
 }

@@ -12,7 +12,8 @@ html { height: 100%;}
 body {width: 100%;
       background-color: white;
       color:#9a9a9a;
-      font-family: "Raleway", Arial, Helvetica, sans-serif;      margin: 0px;
+      font-family: "Raleway", Arial, Helvetica, sans-serif;   
+         margin: 0px;
     font-size: 16px;}
    
     h1,
@@ -176,13 +177,13 @@ footer{
     display: block;
 }
 
-#footer {
-    padding-top: 1.8rem;
-    margin: 0 2.4rem 1.52rem 1.52rem;
-    border-top: 1px solid rgba(153, 149, 149);
-    text-align: center;
-    font-size: 0.9rem;
-    }
+#footer {padding-top: 0.8rem;
+        margin: 0 2.4rem 1.52rem 1.52rem;
+        border-top: 1px solid rgb(153, 149, 149);
+        text-align: center;
+        font-size: 0.6rem;
+        }
+
 
 .copyright a {
     color: #bbb;
@@ -303,6 +304,11 @@ footer{
         padding-bottom: 0;
         
     }
+    #one .article-1.three{
+        border-right:none;
+
+    }
+
     #three .article-1{
        
         width: 50%;
@@ -384,4 +390,15 @@ footer{
         margin-bottom: 5rem;
     }
 }
-/* 1680 */  
+/* 1680 */
+
+@media screen and (min-width:1680px)
+{
+    #one .inner,
+    #two .inner,
+    #three .inner
+    {
+        margin: 0 18rem;
+    }
+    
+}
