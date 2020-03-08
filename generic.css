@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+html { height: 100%;}
+
+* { box-sizing: border-box;}
+
+body { width: 100%;
+    font-size: 16px;
+    color: #5385c1;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+p { margin: 0rem 0rem 2rem 0rem;
+    color: #9A9A9A;
+    line-height: 1.7rem;
+}
+
+.header-1 { width: 100%;
+        background-color: #5385c1;
+
+}
+
+.theory { display: flex;
+            margin: 0rem 1.4rem;
+            justify-content: space-between;
+            padding: 0.7rem;
+            color: white;
+            }
+.title {font-weight: bold;}
+.nav { display: none;}
+header,
+section { width: 100%;
+         text-align: center;} 
+.section3 { padding: 2rem 0rem ;}
+.section { width: 90%;
+            margin: auto;
+            }
+        
+.section3 h2 {font-size: 2rem;
+    font-weight: 100;
+    margin: 0rem 0rem 1rem 0rem;}
+
+.section3 h3 { font-size: 1.4rem;
+        font-weight: normal;
+        margin: 0rem 0rem 1.4rem 0rem;
+
+}
+#small {font-size: 0.9rem;
+                margin-bottom: 0rem 0rem 1.4rem 0rem;}
+
+
+.section3 img {width: 100%;
+        margin-bottom: 2rem;
+}
+
+.article {margin-bottom: 2rem;}
+
+.copyright { margin: auto;
+    width: 90%;
+    padding: 2rem 0rem 1rem 0rem;
+    border-top: 0.05rem solid rgb(153, 149, 149);
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(207, 202, 202);
+}
+.copyright a { text-decoration: none;
+color: rgb(207, 202, 202);}
+
+a:hover {color: black;}
+
+.button { text-decoration: none;
+    background-color: #5385c1;
+    color: white;
+    display: block;
+    padding: 0.7rem 0rem;
+    font-weight: bold;
+    
+    }
+
+@media screen and (min-width: 481px) {
+        .align-center p { text-align: left;}
+        #small { text-align: center;}
+        .section-align h3 { text-align: left;}
+        .section-align p { text-align: left;}
+        .button {width: 5.5rem;}
+
+    }
+
+@media screen and (min-width: 737px) {
+
+        .copyright {text-align: left;}
+        .section3 h2 {font-size: 2.8rem;}
+        #small {font-size: 1rem;
+                margin-bottom: 4rem;}
+    }
+
+@media screen and (min-width: 981px) {
+
+        .button {width: 5rem;}
+        .nav {display: flex;
+            width: 100%;
+            justify-content: flex-end;}
+        
+        nav a { color: white;
+                text-decoration: none;
+                padding: 0.5rem;
+                font-size: 0.7rem;}
+
+        .section3 h2 {font-size: 2.5rem;}
+        .align-center p,
+        #small { font-size: 0.9rem;}
+        .section-align p {font-size: 0.9rem;}
+    
+        .section-align {display: flex;
+                        justify-content: space-between;
+            }
+        .flexarticle { width: calc((100% - 3rem) / 2);
+        }
+        .theory {width: 90%;}
+        .section3 { padding-top: 5.5rem;}
+    }
+
+    @media screen and (min-width: 1285px) {
+
+        .section,
+        .copyright { width: 75%;}
+        .theory { width: 75%;
+                margin: auto;}
+    }

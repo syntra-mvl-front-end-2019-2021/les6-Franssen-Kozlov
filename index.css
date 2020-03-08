@@ -3,8 +3,8 @@ html { height: 100%;
 }
 
 * { box-sizing: border-box;
-    margin: 0;
-    padding: 0;}
+    margin: 0rem;
+    padding: 0rem;}
 
 body { width: 100%;
     font-size: 16px;
@@ -24,6 +24,7 @@ section { width: 100%;
 
 #firstheader { position: absolute;
                 padding: 2rem;
+                width: 90%;
 }
 
 
@@ -69,7 +70,7 @@ p {margin-bottom: 2rem;
         margin: 0 0 3rem;} 
 
 .section { padding: 2rem 0rem;
-            width: 85%;
+            width: 90%;
             margin: auto;
             }
 
@@ -98,7 +99,7 @@ p {margin-bottom: 2rem;
 }
 
 .box.person { margin: 0 0 2rem;
-            padding: 3rem 1.5rem;
+            padding: 2rem 1.5rem;
             border: 0.01rem solid rgb(207, 202, 202);
             }
 
@@ -116,9 +117,9 @@ p {margin-bottom: 2rem;
                 margin-bottom: 1.3rem;
 
 }
-.section3 p {font-size: 0.9rem;
-            font-size: 1rem;
-}
+.section3 header p {font-size: 0.9rem;}
+
+.section-align p {font-size: 1rem;}
 .section3 img {width: 100%;
                 margin-bottom: 2rem;
         }
@@ -126,7 +127,7 @@ p {margin-bottom: 2rem;
 .article {margin-bottom: 2rem;}
 
 .copyright { margin: auto;
-            width: 85%;
+            width: 90%;
             padding: 2rem 0rem 1rem 0rem;
             border-top: 0.05rem solid rgb(153, 149, 149);
             font-size: 0.8rem;
@@ -136,7 +137,7 @@ p {margin-bottom: 2rem;
 .copyright a { text-decoration: none;
     color: rgb(207, 202, 202);}
 
-
+a:hover {color: black;}
 @media screen and (min-width: 481px) {
     #firstheader { position: absolute;
         padding: 3rem 1.5rem;
@@ -147,14 +148,14 @@ p {margin-bottom: 2rem;
                     justify-content: center;}
     .section-align h3 { text-align: left;}
     .section-align p { text-align: left;}
-    .button {width: 10%;}
+    .button {width: 5.5rem;}
     .flexsection {margin: auto;
         }
     .flexinner {display: flex;
         flex-wrap: wrap;
         justify-content: space-between;}
 
-    .box.person { width: calc((100% - 2.5rem) / 2);}
+    .box.person { width: calc((100% - 3rem) / 2);}
     .box.person img {width: 90%;}
 }
 
@@ -170,14 +171,20 @@ p {margin-bottom: 2rem;
                             margin-bottom: 3rem;}
     .copyright {text-align: left;}
     .section3 h2 {font-size: 2.8rem;}
+    .section3 header p {font-size: 1rem;}
 }
 
 @media screen and (min-width: 981px) {
 
-    .section1flex {display: flex;
-                    width: 100%;
+    .section1flex {display: flex; 
                     justify-content: center;
-                    padding: 5.5rem 0rem;}
+                    padding: 5.5rem 0rem;
+                    width: 100%;}
+
+    .section-align {display: flex;
+                   justify-content: space-between;
+            }
+
     .line { padding: 0;
                 margin: 0;
                 width: calc(95%  / 3);
@@ -188,5 +195,61 @@ p {margin-bottom: 2rem;
     .withborder {border-bottom: none;
                 border-right: 0.05rem solid rgb(153, 149, 149);
                 }
-    .button {width: 30%;}
+    .button {width: 5rem;}
+
+
+    nav {display: flex;
+        width: 100%;
+        justify-content: flex-end;} 
+    
+    nav a { color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            font-size: 0.7rem;}
+    
+    
+    #firstheader > .logo {padding: 0rem 0rem;
+                        font-size: 0.9rem;}
+
+    
+
+    .flexinner { display: flex;
+                flex-wrap: nowrap;}
+
+    .box.person { width: calc((100% - 8rem) / 4);}
+    .box.person img {width: 100%;}
+
+    .section2 h2 {font-size: 2.5rem;}
+    .section2 .flexsection p {font-size: 0.9rem;
+                            margin-bottom: 3rem;}
+    .section3 h2 {font-size: 2.5rem;}
+    .section3 header p {font-size: 0.9rem;}
+    .section-align p {font-size: 0.9rem;}
+
+    .flexarticle { width: calc((100% - 3rem) / 2);
+    }
+
+    .section3 { padding-top: 3.5rem;}
+    
+    
+    #firstheader { margin: 0rem 3.1rem;
+                padding: 5rem 0rem;
+                display: flex;
+                 }
+    
+    #header { display: flex;
+            flex-direction: column;} 
+    
 }
+
+@media screen and (min-width: 1285px) {
+
+    .section { width: 80%;}
+    
+    #firstheader { width: 70%;
+        margin: 0rem 12rem;
+        padding: 5rem 0rem;
+ }
+
+}
+
