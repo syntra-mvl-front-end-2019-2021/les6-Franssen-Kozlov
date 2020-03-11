@@ -96,11 +96,21 @@ blockquote { line-height: 1.9rem;
         
 }
 
-.fitgroup {display: flex; }
+.fitgroup {display: flex;
+            width: 100%;
+            justify-content: space-between;}
+            
 
+.fitgroup.fitgroup1 > div { 
+        width: calc((100% - 2rem) / 3);
+        
+}
 
-.fitgroup > div { flex: 1;
-        margin: 0rem 0.3rem;
+.small .fitgroup.fitgroup1 > div { 
+    width: calc((100% - 1rem) / 3);
+    height: 2rem;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .actions .button.disabled { background-color: lightgray;
@@ -110,8 +120,9 @@ blockquote { line-height: 1.9rem;
     background-color: #5a5a5a;
     color: white;
     display: block;
-    margin-bottom: 0.6rem;
-    padding: 0.6rem 0rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0rem;
+    font-weight: bolder;
 }
 
 .button.special {  background-color: rgb(44, 125, 175);
@@ -129,7 +140,7 @@ blockquote { line-height: 1.9rem;
 .button.special.big { padding: 1.3rem 0rem;
                     font-size: 1.3rem;}
 
-.button.alt.small {padding: 0.7rem 0rem;
+.button.alt.small {padding: 0.6rem 0rem;
                     font-size: 0.6rem;}
 
 
@@ -197,14 +208,22 @@ a:hover {color: red;}
 
     .actions { display: flex;
                 flex-direction: row;
-                padding-left: 0rem;
+                justify-content: start;
     }
     .actions > div { flex: 1;
                     margin: 0rem 0.6rem;
                     
     }
 
+    .actions.fitgroup1  div { flex: 1;
+        margin: 0rem 0.6rem;
+        
+}
 
+    .smaller {width: 20.5rem;}
+    .smallest {width: 18.5rem;
+            align-items: center;}
+    
     #centeralways { display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -219,7 +238,9 @@ a:hover {color: red;}
         }
         .responsive1a { padding-left: 1.5rem;
                        }
-
+        
+        #centeralways { margin-bottom: 2rem;}
+        .elements1 { font-size: 2.8rem;}
 }
 
 @media screen and (min-width: 981px) {
@@ -241,6 +262,17 @@ a:hover {color: red;}
             font-size: 0.7rem;}
 
     .buttons {padding-top: 8rem;}
+    .elements1 { font-size: 2.5rem;}
+    .elements { font-size: 1.6rem;}
+    p { font-size: 0.9rem;}
+    h3 { font-size: 1.2rem;}
+    #centeralways { margin: 2rem 0rem;}
+    .responsive2 { display: flex;}
+    .responsive2a { padding-left: 1.5rem;}
+    .responsive2b { padding-left: 1.5rem;}      
+    
+
+    
 }
 
 @media screen and (min-width: 1285px) {
